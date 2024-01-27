@@ -108,7 +108,6 @@ a:hover{
     align-items: right;
     width: auto;
     max-width: 50%;
-    /* border: 2px solid black; */
 }
 #check{
     display: none;
@@ -140,8 +139,7 @@ a:hover{
     justify-content: center;
     gap: 8vw;
 }
-.imagen-food,
-.imagenServ{
+.imagen-food{
     display: flex;
     width:20vw;
     height: auto;
@@ -154,9 +152,20 @@ a:hover{
     -moz-box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
 }
 .imagenServ{
+    display: flex;
+    width:20vw;
+    height: auto;
+    flex-direction: column;
+    text-align: center;     
     border: 0px;
     width: 21vw;
     box-shadow: 0px 0px 0px 0px;
+}
+.imagenServ strong{
+    font-size: 3vw;
+}
+.imagenServ p{
+    font-size: 1.5vw;
 }
 .imagen-food img{
     width: 100%;
@@ -229,9 +238,22 @@ a:hover{
 {
     
     .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
-
+        width: auto;
+    }
+    .home,.foodmenupage.servicepage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .aboutuspage{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenServ{
+        border: 0px;
+        width: 21vw;
+        box-shadow: 0px 0px 0px 0px;
     }
     header{
         display: flex;
@@ -239,6 +261,7 @@ a:hover{
         justify-content: space-between;
         margin: 0 auto;
         opacity: 80%;
+        height: 8vw;
     }
     .menuHeader{
         position: fixed;
@@ -277,12 +300,37 @@ a:hover{
         width: 100%;
     }
     .imagen-food{
-        width: 30vw;
+        width: 25vw;
         height: auto;
         background-color: white;
     
     }
-    .imagen{
-        width: 40vh;
+    .footerConainer{
+        display: flex;
+        gap: 2vw;
+        flex-direction: column;
+    }
+    .footercontent strong,a  p{
+        font-size: 3vw
+    }
+    .texto-foodmenupage p strong{
+        font-size: 3vw;
+    }
+    .texto{
+        display: flex;
+        align-content: center;
+        text-align: center;
+        justify-items: center;
+    }
+    .button{
+        align-self: center;
+    }
+    .imagenServ p{
+        font-size: 2vw;
+        width: 30vw;
+    }
+    .imagenServ{
+        width: auto;
+        max-width: 30vw;
     }
 }
