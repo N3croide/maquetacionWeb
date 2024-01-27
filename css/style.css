@@ -122,39 +122,51 @@ a:hover{
     flex-direction: column;
     margin: 1rem;
     grid-template-rows: 20% 80%;
-    border: 2px black solid;
+    gap: 5vh;
 }
 .texto-foodmenupage{
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(1vw, 1fr));;
     width: 100%;
-    border: 2px black solid;
 }
 .texto-foodmenupage p{
     text-align: center;
 }
 .imgfoodmenuopage{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 10vw;
     width: 100%;
     height: auto;
     padding: 2vw;
-    border: 2px solid red;
-    
-}
-.imagen-food{
     display: flex;
-    width:auto;
-    min-width: 10vw;
+    justify-content: center;
+    gap: 8vw;
+}
+.imagen-food,
+.imagenServ{
+    display: flex;
+    width:20vw;
     height: auto;
-    border: 2px solid blue;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border: 3px black solid;
+}
+.imagenServ{
+    border: 0px;
+    width: 21vw;
 }
 .imagen-food img{
     width: 100%;
     height: auto;
-    display: block; 
-    margin: 0 auto;
+    background-color: white;
+
+}
+.imagen-food p{
+    color: black;
+    background-color: white;
+}
+.servicepage{
+    display: flex;
+    flex-direction: column;
 }
 @media(max-width: 768px)
 {
@@ -202,7 +214,21 @@ a:hover{
         top: 10%;
     }
     .imgfoodmenuopage{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(auto-fill, minmax( 1vw, 1fr));
+        display: grid;
+        grid-template-columns: 0fr;
+        grid-template-rows: repeat(auto-fill, minmax( 1vh, 1fr));
+        width: 100%;
+    }
+    .imagen-food{
+        width: 40vw;
+        height: auto;
+        background-color: white;
+    
+    }
+    .imagen-food p{
+        font-size: 3vh;
+    }
+    .imagen{
+        width: 40vh;
     }
 }
